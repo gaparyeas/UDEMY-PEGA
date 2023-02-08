@@ -7,7 +7,7 @@ window.onload = function () {
 
 
 	console.log("caja", caja);
-
+/* caca */
 
 	var dia = "Lunes";
 
@@ -15,7 +15,7 @@ window.onload = function () {
 
 
 	/*
-	PROTOTIP AUSPICIADO POR SEBITA EL ESCURRIDIZO
+	PROTOTIPo AUSPICIADO POR SEBITA EL ESCURRIDIZO
 	
 	let elInput = document.querySelector("#que")
 	elInput.addEventListener("submit", function(event) {
@@ -69,7 +69,7 @@ window.onload = function () {
 
 			case "sabado":
 				console.log("Dia de despertarse a la hora de la cayampa :)");
-				dia = "Sabado";
+				dia = "sabado";
 				comentario = "Dia de despertarse a la hora de la cayampa :)";
 				caja.style.width = "200px";
 				caja.style.height = "200px";
@@ -86,6 +86,7 @@ window.onload = function () {
 				caja.style.height = "200px";
 				caja.style.background = "green";
 				caja.style.color = "purple";
+				document.getElementById('caja').textContent = `${dia} \n ${comentario}`;
 				break;
 
 			case "lunes":
