@@ -1,13 +1,23 @@
 window.onload = function () {
-	var cajas = document.querySelectorAll("#cajas");
+	var cajas = document.querySelectorAll(".cajas");
 	var caja = document.querySelector("#caja");
 
+	/* ejemplo de un ciclo */
+	for (var i = 0; i<cajas.length; i++){
 
+		console.log("i" , i);
+		cajas[i].style.width = "50px";
+		cajas[i].style.height = "50px";
+		cajas[i].style.background = "blue";
+		cajas[i].style.marginTop = "5px";
+		cajas[i].style.float = "left";
+		cajas[i].style.marginRight = "5px";
+	}
 
 
 
 	console.log("caja", caja);
-/* caca */
+	/* caca */
 
 	var dia = "Lunes";
 
