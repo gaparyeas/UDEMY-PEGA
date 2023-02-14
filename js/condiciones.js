@@ -10,11 +10,20 @@ window.onload = function () {
 		cajas[i].style.height = "50px";
 		cajas[i].style.background = "blue";
 		cajas[i].style.marginTop = "5px";
-		cajas[i].style.float = "left";
+		cajas[i].style.display = "inline-block";
 		cajas[i].style.marginRight = "5px";
 	}
 
+	/*TUTORIAL EVENTOS*/
+	var textoDia = document.querySelector("#textoDia");
 
+	function cambiarColor(){
+		var randomColor = Math.floor(Math.random()*16777215).toString(16);
+		textoDia.color = "red"
+
+	}
+
+	
 
 	console.log("caja", caja);
 	/* caca */
