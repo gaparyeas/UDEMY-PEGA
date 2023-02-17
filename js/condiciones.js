@@ -14,17 +14,37 @@ window.onload = function () {
 		cajas[i].style.marginRight = "5px";
 	}
 
-	/*TUTORIAL EVENTOS*/
-	var textoDia = document.querySelector("#textoDia");
+	/*TUTORIAL EVENTOS (INTENTADO CAMBIAR COLOR DEL TEXTO QUE DIA ES)*/
+	var botonColor = document.querySelector("#botonColor");
+	var textoDia = document.querySelector("#textoDia")
+	botonColor.addEventListener("click", cambiarColor)
 
 	function cambiarColor(){
 		var randomColor = Math.floor(Math.random()*16777215).toString(16);
-		textoDia.color = "red"
+
+		textoDia.style.color = `#${randomColor}`;		
+
+		for (var i = 0; i<cajas.length; i++){
+
+			console.log("i" , i);
+			cajas[i].style.width = "50px";
+			cajas[i].style.height = "50px";
+			cajas[i].style.background = `#${randomColor}`;
+			cajas[i].style.marginTop = "5px";
+			cajas[i].style.display = "inline-block";
+			cajas[i].style.marginRight = "5px";
+			if (cajas[i].style.width = "50px"){
+				cajas[i].style.width = "100px";
+				cajas[i].style.transition = "1s width ease";
+			}
+			else if (cajas[i].style.width = "100px") {
+				cajas[i].style.width = "49px";
+				cajas[i].style.transition = "1s width ease";
+			}
+		}
 
 	}
-
 	
-
 	console.log("caja", caja);
 	/* caca */
 
@@ -65,9 +85,9 @@ window.onload = function () {
 				break;
 
 			case "jueves":
-				console.log("Me voy de vacacione wiiiiiiiii");
+				console.log("Vamo chile no queda nada");
 				dia = "jueves";
-				comentario = "Me voy de vacaciones wiiiiiiiii";
+				comentario = "Nada es imposible wn niuna wea";
 				caja.style.width = "200px";
 				caja.style.height = "200px";
 				caja.style.background = "green";
